@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
 
-export default class Index extends Component {
+export default class Top extends Component {
     render() {
         return (
             <div>
-                <h1>首页</h1>
-               
+                <h1>头部</h1>
             </div>
         )
     }
 }
+
