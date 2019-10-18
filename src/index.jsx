@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
-
+import Nav from './compontent/nav/top'
 export default class Index extends Component {
     render() {
         return (
             <div>
-                <h1>首页</h1>
+               <Nav/>
                
             </div>
         )
