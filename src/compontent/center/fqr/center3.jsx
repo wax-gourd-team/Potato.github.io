@@ -1,5 +1,4 @@
 import React from 'react';
-import './index.scss'
 import { List } from 'antd';
 
 const data = [
@@ -77,7 +76,7 @@ const data = [
     3、使用情况似乎在减弱。`,
   ];
 export default props => {
-    return <div style={{paddingTop: 18}}>
+    return <>
         <List
             style={{width:1200}}
             header={<div><h2>前端开发框架</h2></div>}
@@ -85,7 +84,6 @@ export default props => {
             bordered
             dataSource={data}
             renderItem={item => <List.Item>{item}</List.Item>}
-            // style={{background: 'whitesmoke'}}
         />
-    </div>
+    </>
 }

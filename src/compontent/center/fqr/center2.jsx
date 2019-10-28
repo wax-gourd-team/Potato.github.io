@@ -1,13 +1,12 @@
 import React from 'react';
 import { Collapse } from 'antd';
-import './index.scss'
+
 const { Panel } = Collapse;
 
 export default props => {
     return <>
-    <div className="box-fqr">
-    <Collapse accordion>
-            <Panel header="导航激活样式" key="1">
+        <Collapse accordion>
+            <Panel header="导航激活样式" key="1" style={{width: 1200}}>
                 <p>router-link-exact-active 严格匹配</p>
                 <p>router-link-active / /list 可以配合 router-link 标签加 exact 属性进行严格匹配    </p>
             </Panel>
@@ -60,7 +59,5 @@ export default props => {
                 <p>可复用 可组合 可维护 vue router 什么时候用 query 什么时候用 params</p>
             </Panel>
         </Collapse>
-    </div>
-       
     </>
 }
